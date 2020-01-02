@@ -36,4 +36,17 @@ if let firstNumber = Int("4"){
 
 //Implicitly Unwrapped Optionals
 
+let possibleString: String? = "An optional string"
+let forcedString: String = possibleString!
 
+let assumedString: String! = "An implicitly unwrapped optional string"
+let implicitString: String = assumedString
+
+if assumedString != nil {
+    print(assumedString)
+}
+
+
+if let definedString = assumedString{
+    print(definedString)
+}
